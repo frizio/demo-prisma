@@ -72,3 +72,26 @@ npm i -D prisma
 ```bash
 npx prisma init --datasource-provider sqlite
 ```
+
+### First model
+
+```ts
+model Post {
+  id        Int @id @default(autoincrement())
+  title     String
+  content   String
+  published Boolean  @default(false)
+  createAt  DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("posts")
+}
+```
+
+### Genera
+
+```bash
+DATABASE_URL="file:../db/demo.db"
+npx prisma generate
+npx prisma db push 
+```
