@@ -1,6 +1,6 @@
-import { DB_URL } from './config';
+import { DATABASE_URL } from './config';
 
 console.log('Demo Prisma ORM');
-console.log(DB_URL)
+console.log(DATABASE_URL)
 console.log(' ');
 

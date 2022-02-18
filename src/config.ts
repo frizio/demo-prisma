@@ -1,4 +1,4 @@
 import { config } from "dotenv";
 config();
 
-export const DB_URL = process.env.DB_URL || 'the_url';
+export const DATABASE_URL = process.env.DATABASE_URL || '';
