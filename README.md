@@ -60,3 +60,15 @@ npm i -D nodemon
   "dev2": "ts-node-dev src/index.ts"
 },
 ```
+
+## Install Dev Dependencies 3
+
+```bash
+npm i -D prisma
+```
+
+## Init Prisma
+
+```bash
+npx prisma init --datasource-provider sqlite
+```
